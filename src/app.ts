@@ -10,7 +10,6 @@ import { createAuthRoutes } from './modules/auth/auth.route';
 
 export function createApp(): Hono {
   const app = new Hono();
-  // test route
   // Enable CORS for all origins (development)
   app.use('*', cors({ origin: '*' }));
 
